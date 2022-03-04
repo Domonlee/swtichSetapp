@@ -26,7 +26,7 @@ def delete():
     try:
         token = auth()
         headers = {
-            "Authorization": f"Token {token}",
+            "Authorization": f"Bearer {token}",
             "Content-Type": "application/json",
             "Accept": "application/json",
         }
